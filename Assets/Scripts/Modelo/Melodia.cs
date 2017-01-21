@@ -8,12 +8,18 @@ public class Melodia : MonoBehaviour {
     public AudioClip impact;
     [SerializeField]
     private Nota nota;
-    private string complemento;
+ 
     
     public bool Comparar(string s)
     {
-        string f = nota + complemento;
+        if (s == null) return false;
+        string f = nota + "";
         return s.Equals(f);
+    }
+
+    public string ObterNota()
+    {
+        return nota + "";
     }
 
     void Start()

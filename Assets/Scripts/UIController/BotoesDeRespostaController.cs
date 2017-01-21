@@ -1,15 +1,30 @@
 ﻿using UnityEngine;
+using UnityEngine.UI;
 using System.Collections;
 
 public class BotoesDeRespostaController : MonoBehaviour {
 
-	// Use this for initialization
-	void Start () {
-	
-	}
-	
-	// Update is called once per frame
-	void Update () {
-	
-	}
+    private Button[] botoes;
+
+    public Button[] Botoes
+    {
+        get
+        {
+            return botoes;
+        }
+
+        set
+        {
+            botoes = value;
+        }
+    }
+
+    public void Init()
+    {
+        botoes = GetComponentsInChildren<Button>();
+    }
+
+   
+    
+
 }

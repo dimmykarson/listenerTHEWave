@@ -67,10 +67,24 @@
     <Reference Include="DOTween">
       <HintPath>Assets\Demigiant\DOTween\DOTween.dll</HintPath>
     </Reference>
+    <Reference Include="DOTween43">
+      <HintPath>Assets\Demigiant\DOTween\DOTween43.dll</HintPath>
+    </Reference>
+    <Reference Include="DOTween46">
+      <HintPath>Assets\Demigiant\DOTween\DOTween46.dll</HintPath>
+    </Reference>
+    <Reference Include="DOTween50">
+      <HintPath>Assets\Demigiant\DOTween\DOTween50.dll</HintPath>
+    </Reference>
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Assets\Demigiant\DOTween\Examples\Basics.cs" />
     <Compile Include="Assets\Demigiant\DOTween\Examples\Sequences.cs" />
+    <Compile Include="Assets\Modal\BringToFront.cs" />
+    <Compile Include="Assets\Modal\DisplayManager.cs" />
+    <Compile Include="Assets\Modal\ModalPanel.cs" />
+    <Compile Include="Assets\Modal\ProgramNotes.cs" />
+    <Compile Include="Assets\Modal\TestModalWindow.cs" />
     <Compile Include="Assets\Scripts\GamePlay\DesafioController.cs" />
     <Compile Include="Assets\Scripts\GamePlay\GameplayController.cs" />
     <Compile Include="Assets\Scripts\GamePlay\ScoreController.cs" />
@@ -83,10 +97,16 @@
     <Compile Include="Assets\Scripts\Modelo\Melodia.cs" />
     <Compile Include="Assets\Scripts\Modelo\Star.cs" />
     <Compile Include="Assets\Scripts\UIController\BotoesDeRespostaController.cs" />
+    <Compile Include="Assets\Scripts\UIController\Dialog.cs" />
+    <Compile Include="Assets\Scripts\UIController\UIAnimateButton.cs" />
+    <Compile Include="Assets\Scripts\Util\KLUtil.cs" />
     <Compile Include="Assets\Scripts\Util\MonoSingleton.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="Assets\Demigiant\DOTween\DOTween.XML" />
+    <None Include="Assets\Demigiant\DOTween\DOTween43.xml" />
+    <None Include="Assets\Demigiant\DOTween\DOTween46.xml" />
+    <None Include="Assets\Demigiant\DOTween\DOTween50.xml" />
     <None Include="Assets\Demigiant\DOTween\Editor\DOTweenEditor.XML" />
     <None Include="Assets\Demigiant\DOTween\readme.txt" />
   </ItemGroup>

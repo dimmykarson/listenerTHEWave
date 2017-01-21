@@ -14,7 +14,7 @@ public class ScoreController : MonoBehaviour {
     private int previousValue;
     private int currentValue;
 
-    void Start()
+    void Awake()
     {
         ChangeValue(0);
     }
@@ -26,8 +26,12 @@ public class ScoreController : MonoBehaviour {
 
     public void ChangeValue(int increment)
     {
-        if (increment < 0) return;
         currentValue += increment;
+        if (currentValue < 0)
+        {
+            Debug.Log("Score negativo!");
+            currentValue = 0;
+        }
         text.text = "Score: " + currentValue + " pontos ";
         if (OnScoreChange != null)
         {
